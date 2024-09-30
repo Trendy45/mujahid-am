@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameen Mujahid - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            background-color: #cce7ff;
+        }
+
+        header {
+            background: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #003366;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        input,
+        textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #555;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #003366;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .services-table th,
+        .services-table td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .pay-button {
+            background-color: #003366;
+            color: #fff;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .pay-button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Ameen Mujahid</h1>
+        <p>Certified Professional Freelancer: Empowering Success Through Expertise and Innovation</p>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Ameen Mujahid, a dedicated freelancer with extensive experience in providing tailored solutions for individuals and businesses. My expertise spans resume writing, SEO, and social media management, helping clients stand out in a competitive landscape.</p>
+        <p>I have collaborated with diverse clients, crafting impactful resumes that highlight achievements and utilizing advanced SEO techniques to enhance online visibility. My social media management skills enable me to develop strategies that foster engagement and brand loyalty.</p>
+        <p>Passionate about continuous learning, I stay updated with industry trends to deliver innovative solutions that meet my clients' evolving needs. Let's connect to explore how I can help you achieve your goals and unlock your full potential.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Writing & Editing</h3>
+        <ul>
+            <li><strong>Resume Writing:</strong> Crafting tailored resumes that highlight qualifications and achievements.</li>
+            <li><strong>Cover Letter Writing:</strong> Creating persuasive cover letters that capture attention.</li>
+            <li><strong>Copywriting & Content Writing:</strong> Producing engaging content that resonates with target audiences.</li>
+        </ul>
+        <h3>Digital Marketing</h3>
+        <ul>
+            <li><strong>SEO:</strong> Implementing strategies to enhance website visibility and improve rankings.</li>
+            <li><strong>Social Media Management:</strong> Developing and executing strategies to grow engagement and brand awareness.</li>
+            <li><strong>Email Marketing:</strong> Designing and managing email campaigns that drive conversions.</li>
+            <li><strong>Paid Ads Management:</strong> Creating and optimizing targeted advertising campaigns.</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>I have successfully worked with numerous clients across different freelancing platforms, delivering tailored solutions and earning a reputation for excellence:</p>
+        <ul>
+            <li><strong>Freelancer.com:</strong> High-quality content, SEO, and digital marketing solutions.</li>
+            <li><strong>Upwork:</strong> Long-term clients in resume writing and content creation.</li>
+            <li><strong>Truelancer:</strong> Graphic design and paid advertising services.</li>
+            <li><strong>Fiverr:</strong> 5-star-rated services in resume writing and video editing.</li>
+            <li>Collaborated with Abdelrahman Ali on his website <a href="http://abdelrahmanali.site">AbdelrahmanAli.site</a>, optimizing SEO and enhancing user experience.</li>
+            <li><strong>Kwork:</strong> Designed a professional website for Alixacare.</li>
+        </ul>
+    </section>
+
+    <section id="services">
+        <h2>Services I Offer</h2>
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Order Now</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Resume Writing</strong></td>
+                    <td>Customized resumes that effectively highlight your qualifications</td>
+                    <td>$100</td>
+                    <td><a href="www.fiverr.com/mujahid_am" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Cover Letter Writing</strong></td>
+                    <td>Persuasive cover letters tailored to specific job opportunities</td>
+                    <td>$50</td>
+                    <td><a href="www.fiverr.com/mujahid_am" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>LinkedIn Profile Optimization</strong></td>
+                    <td>Enhancing LinkedIn profiles to attract recruiters and showcase your strengths</td>
+                    <td>$75</td>
+                    <td><a href="www.fiverr.com/mujahid_am" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>SEO Content Writing</strong></td>
+                    <td>Creating SEO-friendly content for improved website rankings</td>
+                    <td>$120</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Social Media Management</strong></td>
+                    <td>Managing social media accounts to boost engagement</td>
+                    <td>$150</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Email Marketing Campaigns</strong></td>
+                    <td>Designing and executing effective email campaigns</td>
+                    <td>$100</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Website Content Optimization</strong></td>
+                    <td>Improving website content for better user engagement</td>
+                    <td>$130</td>
+                    <td><a href="www.fiverr.com/inbox/mujahid_am" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Graphic Design</strong></td>
+                    <td>Creating visually appealing graphics for marketing</td>
+                    <td>$140</td>
+                    <td><a href="www.fiverr.com/mujahid_am" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Video Editing</strong></td>
+                    <td>Editing videos for promotional and personal use</td>
+                    <td>$100</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Content Strategy Development</strong></td>
+                    <td>Creating a roadmap for content creation and distribution</td>
+                    <td>$160</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Market Research</strong></td>
+                    <td>Conducting research to inform marketing strategies</td>
+                    <td>$90</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Branding Services</strong></td>
+                    <td>Developing brand identity and strategies</td>
+                    <td>$200</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Online Course Development</strong></td>
+                    <td>Creating engaging online courses and materials</td>
+                    <td>$180</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Podcast Editing</strong></td>
+                    <td>Editing audio for a polished podcast presentation</td>
+                    <td>$70</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Business Plan Writing</strong></td>
+                    <td>Crafting comprehensive business plans for startups</td>
+                    <td>$250</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Press Release Writing</strong></td>
+                    <td>Writing compelling press releases to announce news</td>
+                    <td>$120</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Influencer Marketing</strong></td>
+                    <td>Connecting brands with relevant influencers</td>
+                    <td>$150</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Website Development</strong></td>
+                    <td>Building responsive and user-friendly websites</td>
+                    <td>$500</td>
+                    <td><a href="fiverr.com/inbox/mujahid_am" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Data Analysis</strong></td>
+                    <td>Analyzing data to inform business decisions</td>
+                    <td>$200</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td> 
+                </tr>
+                <tr>
+                    <td><strong>Social Media Advertising</strong></td>
+                    <td>Creating targeted ads for social media platforms</td>
+                    <td>$150</td>
+                    <td><a href="https://wa.link/phg0v1" class="pay-button">Order Now</a></td> 
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>For more enquires Kindly Get In Touch Via.</p> 
+        <form action="mailto:ameenmujahid61@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ameen Mujahid. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
